@@ -42,8 +42,8 @@ function gameStart() {
 	console.log(allJewels);
 
 	document.getElementById("scores").innerHTML =
-	"<p>Wins: " + wins + "   " +
-	"Losses: " + losses + "</p>";
+	"<h3>Wins: " + wins + "   " +
+	"Losses: " + losses + "</h3>";
 
 }
 
@@ -81,8 +81,8 @@ function results() {
 
 	function printScores() { 
 		document.getElementById("scores").innerHTML =
-		"<p>Wins: " + wins + "   " +
-		"Losses: " + losses + "</p>";
+		"<h3>Wins: " + wins + "   " +
+		"Losses: " + losses + "</h3>";
 	}
 
 }
@@ -92,8 +92,18 @@ function results() {
 
 function endGame() {
 	console.log("endgame");
-	// var gameNumber = Math.floor((Math.random() * 100) + 1);
-	// var userNumber = 0;
+	gameNumber = Math.floor((Math.random() * 100) + 1);
+	userNumber = 0;
+	allNumbers = [];
+	allJewels = [];
+
+	for (i = 0; i < 4; i++) {
+			x = document.getElementById("btn" + i);
+			x.id = "jewel-value";
+		}
+
+	gameStart();
+
 }
 
 
