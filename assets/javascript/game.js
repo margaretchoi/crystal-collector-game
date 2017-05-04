@@ -19,10 +19,8 @@ document.addEventListener("load", gameStart());
 
 function gameStart() {
 	document.getElementById("game-number").innerHTML = gameNumber;
-	document.getElementById("game-number").style.fontSize = "xx-large";
 	
 	document.getElementById("user-number").innerHTML = 0;
-	document.getElementById("user-number").style.fontSize = "xx-large";
 	
 	console.log(userNumber);
 
@@ -42,8 +40,8 @@ function gameStart() {
 	console.log(allJewels);
 
 	document.getElementById("scores").innerHTML =
-	"<h3>Wins: " + wins + "   " +
-	"Losses: " + losses + "</h3>";
+	"<h3>WINS: " + wins + "   " +
+	"LOSSES: " + losses + "</h3>";
 
 }
 
@@ -81,8 +79,8 @@ function results() {
 
 	function printScores() { 
 		document.getElementById("scores").innerHTML =
-		"<h3>Wins: " + wins + "   " +
-		"Losses: " + losses + "</h3>";
+		"<h3>WINS: " + wins + "   " +
+		"LOSSES: " + losses + "</h3>";
 	}
 
 }
